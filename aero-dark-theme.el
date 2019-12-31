@@ -1,4 +1,4 @@
-;; -*- lexical-binding: t -*-
+;;; aero-dark-theme.el --- smooth dark theme -*- lexical-binding: t -*-
 ;;
 ;; Copyright (c) 2019 Jade Michael Thornton
 ;;
@@ -561,3 +561,7 @@
   `(pdf-view-midnight-colors '(,aero-fg . ,aero-bg))))
 
 (provide-theme 'aero-dark)
+
+;;; aero-dark-theme.el ends here
+
+(provide 'aero-dark-theme)
