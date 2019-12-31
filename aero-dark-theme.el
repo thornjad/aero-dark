@@ -81,7 +81,7 @@
 
  ;; faces (simplified)
 
- ((default (:background aero-bg :foreground aero-fg :font "Victor Mono"))
+ ((default (:background aero-bg :foreground aero-fg :font "Victor Mono" :height 140))
   (cursor (:background aero-fg))
   (mode-line (:background aero-grey0 :foreground aero-grey4 :box nil))
   (mode-line-inactive
