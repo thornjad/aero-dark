@@ -16,16 +16,25 @@
 ;; other tortious action, arising out of or in connection with the use or
 ;; performance of this software.
 ;;
-;; Commentary:
-;;
-;; Code:
+;;; Commentary:
 
+(eval-when-compile
+  (require 'cl-lib))
 (require 'autothemer)
+
+;;; Code:
+
+(unless (>= emacs-major-version 24)
+  (error "Requires Emacs 24 or later"))
+;;;###autoload
+(and load-file-name
+   (boundp 'custom-theme-load-path)
+   (add-to-list 'custom-theme-load-path
+                (file-name-as-directory
+                 (file-name-directory load-file-name))))
 
 (autothemer-deftheme
  aero-dark "Aero dark theme"
-
- ;; the theme
 
  ((((class color) (min-colors #xFFFFFF))
    ((class color) (min-colors #xFF)))
@@ -550,11 +559,5 @@
      ,aero-faded-blue
      ,aero-faded-yellow])
   `(pdf-view-midnight-colors '(,aero-fg . ,aero-bg))))
-
-;;;###autoload
-(and load-file-name
-   (boundp 'custom-theme-load-path)
-   (add-to-list 'custom-theme-load-path
-                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'aero-dark)
