@@ -548,7 +548,7 @@
 
  ;; Form to evaluate
  (custom-theme-set-variables
-  'aero-theme
+  'aero-dark
   `(ansi-color-names-vector
     [,aero-grey0
      ,aero-bright-red
