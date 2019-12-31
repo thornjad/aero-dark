@@ -125,11 +125,11 @@
   (match (:foreground aero-faded-black :background aero-faded-blue))
 
   ;; Aero modeline
-  (aero/modeline-evil-normal (:foreground aero-bg :background aero-faded-cyan))
-  (aero/modeline-evil-insert (:foreground aero-bg :background aero-faded-magenta))
-  (aero/modeline-evil-visual (:foreground aero-bg :background aero-faded-green))
-  (aero/modeline-evil-replace (:foreground aero-bg :background aero-bright-orange))
-  (aero/modeline-evil-emacs (:foreground aero-bg :background aero-bright-red))
+  (aero-modeline-evil-normal (:foreground aero-bg :background aero-faded-cyan))
+  (aero-modeline-evil-insert (:foreground aero-bg :background aero-faded-magenta))
+  (aero-modeline-evil-visual (:foreground aero-bg :background aero-faded-green))
+  (aero-modeline-evil-replace (:foreground aero-bg :background aero-bright-orange))
+  (aero-modeline-evil-emacs (:foreground aero-bg :background aero-bright-red))
 
   ;; Customize faces
   (widget-field (:background aero-grey1))
